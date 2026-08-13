@@ -1,5 +1,8 @@
 # clusters/c01
 
+> [!WARNING]
+> Most like failed because `--token-auth` flag was missing (ref: https://fluxcd.io/flux/installation/bootstrap/github/)
+
 Worked partially (https://github.com/sfmunoz/flux-playground/commit/296fdfe76fee4c9b541f9d3fbab109d6531363ba):
 
 ```
