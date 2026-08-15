@@ -5,6 +5,8 @@
 - https://github.com/sfmunoz/flux-playground/commit/3a9d7b586427e8b8b4d914d94246df1cfc3bf472
 - https://github.com/sfmunoz/flux-playground/commit/65bd10ac184adcb6d3eeac78da2b1a0d27e8cc47
 
+**Notice**: it's advisable to use both `--author-email` (default: empty) and `--author-name` (default: Flux) to have proper **git** commits
+
 ```
 $ export GITHUB_TOKEN="github_pat_..."
 
