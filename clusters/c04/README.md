@@ -9,7 +9,16 @@
 $ export GITHUB_TOKEN="github_pat_..."
 
 ./flux-bootstrap.sh c04
-+ flux bootstrap github --token-auth --owner=sfmunoz --repository=flux-playground --path=clusters/c04 --branch=main --private=false --personal=true --author-name flux-c04-bot --author-email 46285520+sfmunoz@users.noreply.github.com
++ flux bootstrap github \
+    --token-auth \
+    --owner=sfmunoz \
+    --repository=flux-playground \
+    --path=clusters/c04 \
+    --branch=main \
+    --private=false \
+    --personal=true \
+    --author-name flux-c04-bot \
+    --author-email 46285520+sfmunoz@users.noreply.github.com
 ► connecting to github.com
 ► cloning branch "main" from Git repository "https://github.com/sfmunoz/flux-playground.git"
 ✔ cloned repository

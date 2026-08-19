@@ -8,7 +8,14 @@ Bootstrap:
 ```
 $ export GITHUB_TOKEN="github_pat_..."
 
-$ flux bootstrap github --token-auth --owner=sfmunoz --repository=flux-playground --path=clusters/c02 --branch=main --private=false --personal=true
+$ flux bootstrap github \
+    --token-auth \
+    --owner=sfmunoz \
+    --repository=flux-playground \
+    --path=clusters/c02 \
+    --branch=main \
+    --private=false \
+    --personal=true
 ► connecting to github.com
 ► cloning branch "main" from Git repository "https://github.com/sfmunoz/flux-playground.git"
 ✔ cloned repository

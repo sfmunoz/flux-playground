@@ -10,7 +10,14 @@
 ```
 $ export GITHUB_TOKEN="github_pat_..."
 
-$ flux bootstrap github --token-auth --owner=sfmunoz --repository=flux-playground --path=clusters/c03 --branch=main --private=false --personal=true
+$ flux bootstrap github \
+    --token-auth \
+    --owner=sfmunoz \
+    --repository=flux-playground \
+    --path=clusters/c03 \
+    --branch=main \
+    --private=false \
+    --personal=true
 ► connecting to github.com
 ► cloning branch "main" from Git repository "https://github.com/sfmunoz/flux-playground.git"
 ✔ cloned repository
@@ -57,7 +64,14 @@ n000e ~ # flux check --pre
 
 n000e ~ # export GITHUB_TOKEN="github_pat_..."
 
-n000e ~ # flux bootstrap github --token-auth --owner=sfmunoz --repository=flux-playground --path=clusters/c03 --branch=main --private=false --personal=true
+n000e ~ # flux bootstrap github \
+            --token-auth \
+            --owner=sfmunoz \
+            --repository=flux-playground \
+            --path=clusters/c03 \
+            --branch=main \
+            --private=false \
+            --personal=true
 ► connecting to github.com
 ► cloning branch "main" from Git repository "https://github.com/sfmunoz/flux-playground.git"
 ✔ cloned repository

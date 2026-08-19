@@ -8,7 +8,13 @@ Worked partially (https://github.com/sfmunoz/flux-playground/commit/296fdfe76fee
 ```
 $ export GITHUB_TOKEN="github_pat_..."
 
-$ flux bootstrap github --owner=sfmunoz --repository=flux-playground --path=clusters/c01 --branch=main --private=false --personal=true
+$ flux bootstrap github \
+    --owner=sfmunoz \
+    --repository=flux-playground \
+    --path=clusters/c01 \
+    --branch=main \
+    --private=false \
+    --personal=true
 ► connecting to github.com
 ► cloning branch "main" from Git repository "https://github.com/sfmunoz/flux-playground.git"
 ✔ cloned repository
