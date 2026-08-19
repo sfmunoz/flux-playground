@@ -7,14 +7,14 @@ function error_and_exit {
 
 CLUSTER="$1"
 
-[ "${CLUSTER}" = "dev" -o "${CLUSTER}" = "prod" ] || error_and_exit "unknown cluster '${CLUSTER}' (valid: 'dev' or 'prod')"
+[ "${CLUSTER}" = "" ] && error_and_exit "undefined cluster"
 
 set -x -e -o pipefail
 
 flux bootstrap github \
   --token-auth \
   --owner=sfmunoz \
-  --repository=i12e \
+  --repository=flux-playground \
   --path=clusters/${CLUSTER} \
   --branch=main \
   --private=false \
