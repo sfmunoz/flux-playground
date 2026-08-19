@@ -8,7 +8,7 @@
 ```
 $ export GITHUB_TOKEN="github_pat_..."
 
-./flux-bootstrap.sh c04
+$ ./flux-bootstrap.sh c04
 + flux bootstrap github \
     --token-auth \
     --owner=sfmunoz \
