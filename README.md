@@ -23,6 +23,7 @@ Repository created while working on https://github.com/sfmunoz/i12e/issues/295
 https://github.com/fluxcd/source-watcher
 
 - [c04](clusters/c04): [flux-bootstrap.sh](flux-bootstrap.sh) used **before** adding `--components-extra=source-watcher` option
+  - **Notice**: https://github.com/sfmunoz/flux-playground/commit/d762f29bf0cc5d572eb916af525f94cccbc648a0 : after this change both [c04](clusters/c04) and [c05](clusters/c05) are equal except for the usual **gotk-sync.yaml → spec.path** difference.
 - [c05](clusters/c05): [flux-bootstrap.sh](flux-bootstrap.sh) used **after** adding `--components-extra=source-watcher` option
 
 `--feature-gates=ExternalArtifact=true` is added to:
