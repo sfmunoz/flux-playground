@@ -25,6 +25,11 @@ https://github.com/fluxcd/source-watcher
 - [c04](clusters/c04): [flux-bootstrap.sh](flux-bootstrap.sh) used **before** adding `--components-extra=source-watcher` option
 - [c05](clusters/c05): [flux-bootstrap.sh](flux-bootstrap.sh) used **after** adding `--components-extra=source-watcher` option
 
+`--feature-gates=ExternalArtifact=true` is added to:
+
+- **flux-system.kustomize-controller** deployment
+- **flux-system.helm-controller** deployment
+
 ```diff
 $ diff -rNU0 clusters/c04 clusters/c05
 diff -rNU0 clusters/c04/flux-system/gotk-components.yaml clusters/c05/flux-system/gotk-components.yaml
